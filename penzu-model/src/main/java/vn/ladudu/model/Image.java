@@ -1,4 +1,4 @@
-package vn.ladudu;
+package vn.ladudu.model;
 
 import javax.persistence.*;
 import java.util.Date;
