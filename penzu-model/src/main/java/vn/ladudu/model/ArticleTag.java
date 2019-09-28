@@ -7,32 +7,31 @@ import javax.persistence.*;
 public class ArticleTag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-
-    private Long ArticleId;
-    private Long TagId;
+    private Long id;
+    private Long articleId;
+    private Long tagId;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public Long getArticleId() {
-        return ArticleId;
+        return articleId;
     }
 
     public void setArticleId(Long articleId) {
-        ArticleId = articleId;
+        this.articleId = articleId;
     }
 
     public Long getTagId() {
-        return TagId;
+        return tagId;
     }
 
     public void setTagId(Long tagId) {
-        TagId = tagId;
+        this.tagId = tagId;
     }
 }

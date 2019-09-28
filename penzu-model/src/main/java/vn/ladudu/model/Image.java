@@ -8,40 +8,40 @@ import java.util.Date;
 public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-    private String Path;
-    private Date CreatedDate;
-    private Long ArticleId;
+    private Long id;
+    private String path;
+    private Date createdDate;
+    private Long articleId;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getPath() {
-        return Path;
+        return path;
     }
 
     public void setPath(String path) {
-        Path = path;
+        this.path = path;
     }
 
     public Date getCreatedDate() {
-        return CreatedDate;
+        return createdDate;
     }
 
     public void setCreatedDate(Date createdDate) {
-        CreatedDate = createdDate;
+        this.createdDate = createdDate;
     }
 
     public Long getArticleId() {
-        return ArticleId;
+        return articleId;
     }
 
     public void setArticleId(Long articleId) {
-        ArticleId = articleId;
+        this.articleId = articleId;
     }
 }
