@@ -6,7 +6,7 @@ import java.util.Date;
 @Entity
 @Table(name = "Image")
 public class Image {
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private String Path;
