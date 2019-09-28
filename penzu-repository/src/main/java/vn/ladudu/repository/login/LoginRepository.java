@@ -5,8 +5,9 @@ import org.springframework.stereotype.Repository;
 import vn.ladudu.model.User;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface LoginRepository extends JpaRepository<User,Long> {
-    boolean findBy()
+    Optional<User> findByEmailAndPassword(String email, String password);
 }

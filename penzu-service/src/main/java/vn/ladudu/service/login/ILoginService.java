@@ -1,4 +1,5 @@
 package vn.ladudu.service.login;
 
-public interface LoginService {
+public interface ILoginService {
+    boolean checkUser(String email, String password);
 }
