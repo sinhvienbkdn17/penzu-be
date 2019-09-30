@@ -1,13 +1,10 @@
-package vn.ladudu.controller.Login;
+package vn.ladudu.controller.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import vn.ladudu.model.User;
 import vn.ladudu.service.login.LoginService;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api")
