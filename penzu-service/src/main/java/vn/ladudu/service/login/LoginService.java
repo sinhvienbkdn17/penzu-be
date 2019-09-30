@@ -15,24 +15,27 @@ public class LoginService implements ILoginService{
     LoginRepository loginRepository;
 
     @Override
-    public boolean checkPassword(String email, String password) {
-        List<User> users =loginRepository.findAll();
-        for(User u: users){
-            if(u.getEmail().equals(email) && u.getPassword().equals(password))
-                return true;
+    public boolean checkEmail(String email) {
+        boolean isEmailValid = false;
+        if(!StringUtils.isEmpty(email.trim().toLowerCase())){
+            Optional<String> validEmail = loginRepository.findByEmail(email);
+            isEmailValid = validEmail.isPresent();
         }
-        return false;
+
+        return isEmailValid;
     }
 
     @Override
-    public boolean checkEmail(String email) {
-        List<User> users = loginRepository.findAll();
-        for(User u: users){
-            if (u.getEmail().equals(email))
-                return true;
+    public boolean checkPasswordByEmail(String email, String password) {
+        boolean isPasswordValid = false;
+        if(!StringUtils.isEmpty(password)){
+            Optional<User> user = loginRepository.findByEmailAndPassword(email, password);
+            isPasswordValid = user.isPresent();
         }
-        return false;
+        return  isPasswordValid;
     }
+
+
 
 //    @Override
 //    public boolean checkUser(String email, String password) {

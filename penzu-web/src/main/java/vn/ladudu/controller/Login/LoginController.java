@@ -17,12 +17,12 @@ public class LoginController {
 
     @PostMapping("/login")
     public ResponseEntity checkUserLogin(@RequestParam(value = "email") String email, @RequestParam(value = "password") String password) {
-        if(loginService.checkEmail(email) == true){
-            if(loginService.checkPassword(email,password) == true)
+        if(loginService.checkEmail(email)){
+            if(loginService.checkPasswordByEmail(email,password))
                 return new ResponseEntity(HttpStatus.OK);
             else
-                return  new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+                return  new ResponseEntity(HttpStatus.UNAUTHORIZED);
         }
-        return new ResponseEntity(HttpStatus.NOT_FOUND);
+        return new ResponseEntity(HttpStatus.NOT_ACCEPTABLE);
     }
 }
