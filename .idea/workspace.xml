@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a48b700f-f71e-4c06-a3d4-59c6f475eb71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/penzu-repository/src/main/java/vn/ladudu/repository/login/LoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/penzu-repository/src/main/java/vn/ladudu/repository/login/LoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/penzu-service/src/main/java/vn/ladudu/service/login/ILoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/penzu-service/src/main/java/vn/ladudu/service/login/ILoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/penzu-service/src/main/java/vn/ladudu/service/login/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/penzu-service/src/main/java/vn/ladudu/service/login/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/penzu-web/src/main/java/vn/ladudu/controller/Login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/penzu-web/src/main/java/vn/ladudu/controller/Login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/penzu-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/penzu-web/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="a48b700f-f71e-4c06-a3d4-59c6f475eb71" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
       <updated>1569379692372</updated>
       <workItem from="1569379696749" duration="3132000" />
       <workItem from="1569661983098" duration="809000" />
-      <workItem from="1569775469454" duration="3816000" />
+      <workItem from="1569775469454" duration="4947000" />
     </task>
     <servers />
   </component>
