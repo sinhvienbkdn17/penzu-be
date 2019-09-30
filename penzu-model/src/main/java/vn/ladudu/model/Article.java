@@ -8,94 +8,94 @@ import java.util.Date;
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-    private String Title;
-    private String AliasTitle;
-    private String Content;
-    private Date CreatedDate;
-    private Date LastModifiedDate;
-    private boolean IsPublic;
-    private String MessagePublic;
-    private Long UserId;
-    private Long ArticleTypeId;
+    private Long id;
+    private String title;
+    private String aliasTitle;
+    private String content;
+    private Date createdDate;
+    private Date lastModifiedDate;
+    private boolean isPublic;
+    private String messagePublic;
+    private Long userId;
+    private Long articleTypeId;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getAliasTitle() {
-        return AliasTitle;
+        return aliasTitle;
     }
 
     public void setAliasTitle(String aliasTitle) {
-        AliasTitle = aliasTitle;
+        this.aliasTitle = aliasTitle;
     }
 
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public void setContent(String content) {
-        Content = content;
+        this.content = content;
     }
 
     public Date getCreatedDate() {
-        return CreatedDate;
+        return createdDate;
     }
 
     public void setCreatedDate(Date createdDate) {
-        CreatedDate = createdDate;
+        this.createdDate = createdDate;
     }
 
     public Date getLastModifiedDate() {
-        return LastModifiedDate;
+        return lastModifiedDate;
     }
 
     public void setLastModifiedDate(Date lastModifiedDate) {
-        LastModifiedDate = lastModifiedDate;
+        this.lastModifiedDate = lastModifiedDate;
     }
 
     public boolean isPublic() {
-        return IsPublic;
+        return isPublic;
     }
 
     public void setPublic(boolean aPublic) {
-        IsPublic = aPublic;
+        isPublic = aPublic;
     }
 
     public String getMessagePublic() {
-        return MessagePublic;
+        return messagePublic;
     }
 
     public void setMessagePublic(String messagePublic) {
-        MessagePublic = messagePublic;
+        this.messagePublic = messagePublic;
     }
 
     public Long getUserId() {
-        return UserId;
+        return userId;
     }
 
     public void setUserId(Long userId) {
-        UserId = userId;
+        this.userId = userId;
     }
 
     public Long getArticleTypeId() {
-        return ArticleTypeId;
+        return articleTypeId;
     }
 
     public void setArticleTypeId(Long articleTypeId) {
-        ArticleTypeId = articleTypeId;
+        this.articleTypeId = articleTypeId;
     }
 }
