@@ -7,4 +7,6 @@ import java.util.List;
 public interface ILoginService {
     boolean checkPasswordByEmail(String email, String password);
     boolean checkEmail(String email);
+    Long getIdByEmail(String email);
+    boolean checkUserId(Long id);
 }
